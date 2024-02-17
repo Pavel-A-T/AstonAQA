@@ -1,4 +1,4 @@
-public class Employee {
+public class Person {
     private String fio;
     private String position;
     private String email;
@@ -7,19 +7,19 @@ public class Employee {
     private int age;
 
     public static void main(String[] args) {
-        Employee[] persArray = new Employee[5];
-        persArray[0] = new Employee("Ivanov Ivan", "Engineer", "ivan@mail.ru", "87894561258", 30000, 25);
-        persArray[1] = new Employee("Petrov Petr", "Worker", "petr@ya.ru", "89584532876", 321354, 26);
-        persArray[2] = new Employee("Fedorov Feodor", "Engineer", "feod@mail.ru", "+67891225846", 430000, 52);
-        persArray[3] = new Employee("Janin Scovo", "Worker", "scovo@google.com", "+12258763458", 130000, 47);
-        persArray[4] = new Employee("Exco Erty", "Engineer", "exco@rutyuer.com", "85874253687", 12000, 33);
+        Person[] persArray = new Person[5];
+        persArray[0] = new Person("Ivanov Ivan", "Engineer", "ivan@mail.ru", "87894561258", 30000, 25);
+        persArray[1] = new Person("Petrov Petr", "Worker", "petr@ya.ru", "89584532876", 321354, 26);
+        persArray[2] = new Person("Fedorov Feodor", "Engineer", "feod@mail.ru", "+67891225846", 430000, 52);
+        persArray[3] = new Person("Janin Scovo", "Worker", "scovo@google.com", "+12258763458", 130000, 47);
+        persArray[4] = new Person("Exco Erty", "Engineer", "exco@rutyuer.com", "85874253687", 12000, 33);
 
-        for (Employee e : persArray) {
-            System.out.println(e);
+        for (Person person : persArray) {
+            person.showPerson();
         }
     }
 
-    public Employee(String fio, String position, String email, String phoneNumber, int salary, int age) {
+    public Person(String fio, String position, String email, String phoneNumber, int salary, int age) {
         this.fio = fio;
         this.position = position;
         this.email = email;
@@ -38,5 +38,9 @@ public class Employee {
                 ", salary=" + salary +
                 ", age=" + age +
                 '}';
+    }
+
+    public void showPerson() {
+        System.out.println(this);
     }
 }
