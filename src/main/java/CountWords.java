@@ -8,7 +8,7 @@ public class CountWords {
         List<String> result = new ArrayList<>();
         List<String> list = Arrays.asList(array);
         for (int i = 0; i < list.size(); i++) {
-            //count количество повторений слова
+            //count РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРІС‚РѕСЂРµРЅРёР№ СЃР»РѕРІР°
             int count = 1;
             String word = list.get(i);
             if (word == null) {
@@ -21,7 +21,7 @@ public class CountWords {
                     count++;
                 }
             }
-            result.add(word + " - " + count + "раз(а)");
+            result.add(word + " - " + count + "СЂР°Р·(Р°)");
         }
         return result;
     }
