@@ -18,7 +18,7 @@ public class AppData {
         for (int i = 0; i < header.length; i++) {
             result += header[i] + separator;
         }
-        result += "\n data ->";
+        result += "\ndata -> ";
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 result += data[i][j] + separator;

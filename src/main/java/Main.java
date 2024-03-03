@@ -14,7 +14,7 @@ public class Main {
         appData.setData(data);
         appData.setHeader(headers);
         if (save(appData, filename, separator)) {
-            System.out.println("Файл " + filename + " сохранён");
+            System.out.println("Р¤Р°Р№Р» " + filename + " СЃРѕС…СЂР°РЅС‘РЅ");
         }
         if (loadFromFile(loadFromFile, filename, separator)) {
             System.out.println(loadFromFile);
